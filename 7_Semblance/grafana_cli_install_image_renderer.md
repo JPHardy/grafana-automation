@@ -111,9 +111,26 @@ By specifying the `--pluginsDir` option, we tell Grafana CLI to use the specifie
 Give these steps a try and let me know if it works or if you encounter any further issues. We're almost there! 🚀
 
 prompts:
-- objective: cli install with image renderer
-- Format: Create a summary
-- Format: Use emojis
-- Format: one-line comment
-- Format: use markdown structure
-- Rewrite: Eliminate duplicate information
+# 🎯 Prompt Objectives
+- Create clear instructions for installing Grafana image renderer plugin via CLI
+- Ensure steps are concise and non-redundant
+- Include proper error handling guidance
+
+# ❓ Key Questions
+- What is the target Grafana installation environment?
+- Are there specific permission requirements?
+- What validation steps are needed?
+- How to verify successful installation?
+
+# 📋 Format Requirements
+- Use clear step-by-step markdown structure
+- Include relevant emojis for visual organization
+- Add single-line comments for clarity
+- Maintain consistent formatting
+- Remove duplicate instructions
+
+# ✅ Success Criteria
+- Plugin installs correctly in specified directory
+- Proper permissions are set
+- Grafana service restarts successfully
+- Image rendering works as expected
