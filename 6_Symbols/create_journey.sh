@@ -29,3 +29,11 @@ Finally, the `7_Semblance` folder includes the `README.md`, which is the wrappin
 prompt:
 - automate: tree -D
 - format: use emojis
+
+# prompts:
+# - objective: cli install with image renderer
+# - Format: Create a summary
+# - Format: Use emojis
+# - Format: one-line comment
+# - Format: use markdown structure
+# - Rewrite: Eliminate duplicate information
