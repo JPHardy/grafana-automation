@@ -18,11 +18,29 @@
 - Alignment with overall development path
 
 
-prompt:
-- objective: Explain the self learning method by using lacans triad
-- keyresults: mention the methodlogy to learn and update the skills gaps
-- Format: Create a summary
-- Format: Use emojis
-- Format: one-line comment
-- Format: use markdown structure
-- Rewrite: Eliminate duplicate information
+prompts:
+# 🎯 Prompt Engineering Guidelines
+
+## 🎨 Objectives
+- Explain self-learning methodology through Lacan's triad (Real, Symbolic, Imaginary)
+- Structure learning path using clear objectives and measurable outcomes
+- Document practical implementation and results
+
+## 📊 Expected Outputs
+- Comprehensive documentation following Lacan's framework
+- Clear methodology for identifying and closing skill gaps
+- Practical examples demonstrating concepts
+
+## 📝 Format Requirements
+- Use clear markdown structure with proper headings
+- Include relevant emojis for visual organization
+- Add concise single-line comments for clarity
+- Maintain consistent formatting throughout
+- Remove any redundant information
+
+## ✅ Quality Criteria
+- Content aligns with Lacan's triad framework
+- Documentation is complete and well-structured
+- Examples are practical and relevant
+- No duplicate information
+- Clear progression of concepts

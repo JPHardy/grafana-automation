@@ -18,7 +18,7 @@
 - Refinement of development practices
 
 
-prompt:
+prompts:
 - objective: Explain the self learning method by using lacans triad mention the errors folder
 - keyresults: mention the methodlogy to learn and update the skills gaps use the files in this folder
 - Format: Create a summary

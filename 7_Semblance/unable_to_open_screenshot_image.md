@@ -44,7 +44,7 @@ Replace `your_dashboard_uid` and `your_panel_id` with the actual UID of your das
 
 This should download the image correctly. Give it a try, and let me know if it works. 🎨
 
-prompt:
+prompts:
 - objective: Explain unable to open screenshot image
 - Format: Create a summary
 - Format: Use emojis

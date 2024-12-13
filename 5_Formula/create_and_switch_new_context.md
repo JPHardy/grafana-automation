@@ -19,7 +19,7 @@ kubectl config get-contexts
 
 We can use context to save time, we will always operate within the namespace of grafana-monitoring.
 
-prompt:
+prompts:
 - objective: install grafana with image renderer
 - Format: Create a summary
 - Format: Use emojis

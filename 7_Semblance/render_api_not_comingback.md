@@ -105,7 +105,7 @@ curl -H "Authorization: Bearer glsa_Lkp05hJEtZoAj6fSwedfLyIg5uCuDTW0_9fb7c495" \
 
 curl -H "Authorization: Bearer glsa_Lkp05hJEtZoAj6fSwedfLyIg5uCuDTW0_9fb7c495" "https://humble-couscous-qp6qgj7r9q729jx4-8080.app.github.dev/api/datasources/proxy/uid/fe6t3evvsomioc" --output image.png
 
-prompt:
+prompts:
 - objective: Explain 
 - Format: Use emojis
 - Format: one-line comment

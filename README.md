@@ -24,13 +24,42 @@ Collaborators>
 - Nawal > https://www.linkedin.com/in/nawalc/
 
 
-prompt:
-- objective: Explain the self learning methodly by using lacans triad
-- keyresults: mention the methodlogy to learn and update the skills gaps use the all the files in this project
-- Format: Create a summary
-- Format: Use emojis
-- Format: one-line comment
-- Format: use markdown structure
-- Rewrite: Eliminate duplicate information
-- Fix: grammar spelling
-- Fix: syntax
+prompts:
+# 🎯 Objectives
+- Develop a comprehensive self-learning framework that:
+  - Maps learning stages to Lacan's triad concepts
+  - Provides clear metrics for progress tracking
+  - Includes practical validation methods
+- Establish a systematic process to:
+  - Identify current skill levels
+  - Define target competencies 
+  - Create actionable learning plans
+  - Measure skill development
+- Build a portfolio of real-world projects that:
+  - Demonstrate applied knowledge
+  - Solve actual business problems
+  - Follow industry best practices
+  - Include detailed documentation
+
+# 📊 Key Results
+- Implement folder structure mapping to Lacan's concepts
+- Track progress through clear documentation and examples
+- Validate learning through hands-on implementation
+- Capture errors and solutions for continuous improvement
+
+# 📝 Format Requirements
+- Use clear markdown structure and headings
+- Include relevant emojis for visual organization
+- Add concise single-line comments for clarity
+- Maintain consistent formatting throughout
+- Eliminate redundant information
+
+# ✅ Quality Checks
+- Verify grammar and spelling
+- Validate markdown syntax
+- Ensure documentation completeness
+- Test all code examples
+- Review for duplicate content
+
+PromptFixer:
+-act as a prompt engineer,review the prompt and ask your questions,write a better version of the prompt

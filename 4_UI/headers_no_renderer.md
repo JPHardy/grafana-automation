@@ -60,13 +60,28 @@ x-served-by: tunnels-prod-rel-uks1-v3-cluster
 x-xss-protection: 1; mode=block
 strict-transport-security: max-age=31536000; includeSubDomains
 
-prompt:
-- objective: explain the headers
-- keyresult : give the rationale
-- keyresult : relate the file to the existing project
-- Format: Create a summary
-- Format: create a header
-- Format: Use emojis
-- Format: one-line comment
-- Format: use markdown structure
-- Rewrite: Eliminate duplicate information
+prompts:
+# 🎯 Prompt Engineering for HTTP Headers Documentation
+
+## Objectives
+- Provide clear explanation of HTTP security headers and their purpose
+- Document rationale behind each header configuration
+- Connect headers implementation to overall project security goals
+
+## Key Results
+- Comprehensive header documentation with explanations
+- Security implications and benefits clearly outlined  
+- Integration with project's monitoring and security features
+
+## Format Requirements
+- Use descriptive section headers with emojis
+- Include single-line comments for clarity
+- Follow consistent markdown structure
+- Remove any redundant information
+
+## Quality Checks
+- Verify technical accuracy of header descriptions
+- Validate markdown formatting
+- Ensure clear connection to project goals
+- Remove duplicate content
+- Test code examples if included

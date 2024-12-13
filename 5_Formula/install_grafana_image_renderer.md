@@ -43,7 +43,7 @@
 
 Enjoy visualizing your data with enhanced image rendering! 🎨✨
 
-prompt:
+prompts:
 - objective: install grafana with image renderer
 - Format: Create a summary
 - Format: Use emojis

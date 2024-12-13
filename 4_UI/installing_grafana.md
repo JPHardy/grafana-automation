@@ -33,12 +33,10 @@ WARNING: There are "resources" sections in the chart not set. Using "resourcesPr
 +info https://kubernetes.io/docs/concepts/configuration/manage-resources-containers/
 ```
 
-prompt:
-- objective: Explain the install
-- keyresults: explain the command and the output
-- Format: Add headers
-- Format: Create a summary
-- Format: Use emojis
-- Format: one-line comment
-- Format: use markdown structure
-- Rewrite: Eliminate duplicate information
+prompts:
+# 🚀 Installing Grafana with Helm
+
+## 📋 Summary
+This document explains the Grafana installation process using Helm and provides guidance on accessing and configuring the deployment.
+
+## 🎯 Command Used

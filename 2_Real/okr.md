@@ -86,10 +86,28 @@
 - 🔄 Additional data sources
 - 🔄 Advanced visualization requirements by creating a markup
 
-prompt:
-- objective: Set objective and key results
-- Format: Create a summary
-- Format: Use emojis
-- Format: one-line comment
-- Format: use markdown structure
-- Rewrite: Eliminate duplicate information
+prompts:
+# 🎯 Objectives
+- Create a comprehensive Grafana monitoring solution with automated screenshot capabilities
+- Document complete setup and configuration process
+- Implement robust error handling and security measures
+
+# 📊 Key Results
+- Successfully deploy Grafana with JSON data source
+- Set up automated dashboard screenshot system
+- Create clear technical documentation
+- Validate all functionality through testing
+
+# 📝 Format Guidelines
+- Use clear markdown structure with headings
+- Include relevant emojis for visual organization 
+- Add concise single-line comments
+- Maintain consistent formatting
+- Reference existing documentation
+
+# ✅ Quality Checks
+- Verify all configurations work as expected
+- Test automation workflows end-to-end
+- Review documentation completeness
+- Validate security measures
+- Check for redundant information

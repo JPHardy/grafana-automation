@@ -11,7 +11,7 @@ kubectl -n grafana-monitoring port-forward
 
 
 
-prompt:
+prompts:
 - objective: Explain the install
 - keyresults: explain the command and the output
 - keyresults: Write rationale to the rest of the project

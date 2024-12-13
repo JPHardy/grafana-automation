@@ -25,7 +25,7 @@
 ## 🔗 URL Structure
 - Format: `https://<codespace-name>-<port>.preview.app.github.dev` // Standard GitHub Codespace URL pattern
 
-prompt:
+prompts:
 - objective: explain
 - Format: Use emojis
 - Format: one-line comment

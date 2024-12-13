@@ -112,7 +112,7 @@ Would you like me to help with:
 3. Writing automation scripts for regular screenshots?
 
 
-prompt:
+prompts:
 - How do I use render API to make screenshots on Grafana dashboards?
 - Can you help me set up the Grafana render API key first?
 - set up time ranges on the grafana dashboard so my screenshot is seeing the grafana data from a certain data and time

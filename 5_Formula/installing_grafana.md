@@ -72,7 +72,7 @@ Would you like me to help with dashboard setup or data source configuration? �
 This summary ensures the Image Renderer plugin is included and necessary permissions are set. Let me know if you need any more tweaks! 😊📈🚀
 
 
-prompt:
+prompts:
 - Hello can I use helm and bitnami to install grafana instead?
 - Use emojis
 - Use succinct, one-line comment

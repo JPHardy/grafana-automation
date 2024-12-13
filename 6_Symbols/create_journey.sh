@@ -26,7 +26,7 @@ The `6_Symbols` folder contains essential building blocks such as YAML files (`d
 Finally, the `7_Semblance` folder includes the `README.md`, which is the wrapping document that explains the purpose of the entire project. It serves as the bridge between all the steps taken, helping the team reflect on how all the components fit together and function as a cohesive whole.
 
 
-prompt:
+prompts:
 - automate: tree -D
 - format: use emojis
 

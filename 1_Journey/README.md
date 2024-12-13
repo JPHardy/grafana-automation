@@ -19,11 +19,28 @@ A structured approach to skill development using psychoanalytic concepts. Think 
 
 > This journey transforms abstract concepts into practical skills through conscious progression across all three dimensions.
 
-prompt:
-- objective: Explain the self learning method by using lacans triad
-- keyresults: mention the methodlogy to learn and update the skills gaps
-- Format: Create a summary
-- Format: Use emojis
-- Format: one-line comment
-- Format: use markdown structure
-- Rewrite: Eliminate duplicate information
+prompts:
+# 🎯 Objectives
+- Document a self-learning methodology using Lacan's triad (Real, Symbolic, Imaginary)
+- Create a structured approach for identifying and closing skills gaps
+- Demonstrate practical application through project examples
+
+# 📊 Key Results
+- Implement folder structure mapping to Lacan's concepts
+- Track progress through clear documentation and examples
+- Validate learning through hands-on implementation
+- Capture errors and solutions for continuous improvement
+
+# 📝 Format Requirements
+- Use clear markdown structure and headings
+- Include relevant emojis for visual organization
+- Add concise single-line comments for clarity
+- Maintain consistent formatting throughout
+- Eliminate redundant information
+
+# ✅ Quality Checks
+- Verify grammar and spelling
+- Validate markdown syntax
+- Ensure documentation completeness
+- Test all code examples
+- Review for duplicate content

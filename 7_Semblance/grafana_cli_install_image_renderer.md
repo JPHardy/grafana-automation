@@ -110,7 +110,7 @@ By specifying the `--pluginsDir` option, we tell Grafana CLI to use the specifie
 
 Give these steps a try and let me know if it works or if you encounter any further issues. We're almost there! 🚀
 
-prompt:
+prompts:
 - objective: cli install with image renderer
 - Format: Create a summary
 - Format: Use emojis

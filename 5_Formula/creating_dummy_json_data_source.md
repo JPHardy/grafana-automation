@@ -32,10 +32,25 @@
   ]
 }
 
-<!-- prompt:
-- objective: install grafana with image renderer
-- Format: Create a summary
-- Format: Use emojis
-- Format: one-line comment
-- Format: use markdown structure
-- Rewrite: Eliminate duplicate information -->
+# 🎯 Objectives
+- Install and configure Grafana with image renderer plugin
+- Set up JSON data source for visualization
+- Document setup process and configuration
+
+# 📊 Expected Results
+- Working Grafana installation with renderer
+- JSON data source properly configured
+- Verified visualization capabilities
+
+# 📝 Format Requirements
+- Use clear markdown structure
+- Include descriptive emojis
+- Add concise inline comments
+- Follow consistent formatting
+- Remove redundant content
+
+# ✅ Quality Checks
+- Test Grafana installation
+- Validate renderer plugin
+- Verify data source connection
+- Document any issues found

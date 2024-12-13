@@ -46,11 +46,30 @@ A step-by-step guide to set up Grafana with a JSON data source in GitHub Codespa
 
 > 💡 This proof of concept demonstrates a complete Grafana setup in Codespaces with JSON data integration, providing a foundation for monitoring and visualization needs.
 
-prompt:
-- objective: Proof of concept of install grafana in codespaces using a json datasource 
-- keyresults: Use the existing files and have the references
-- Format: Create a summary
-- Format: Use emojis
-- Format: one-line comment
-- Format: use markdown structure
-- Rewrite: Eliminate duplicate information
+prompts:
+# 🎯 Objectives
+- Create a proof of concept for Grafana installation in GitHub Codespaces
+- Integrate JSON data source for visualization
+- Document complete setup process with references
+- Validate functionality through testing
+
+# 📊 Key Results
+- Successfully install and configure Grafana using Helm
+- Set up JSON data source with mock data
+- Enable image rendering capability
+- Verify monitoring and visualization features
+- Document all steps and configurations
+
+# 📝 Format Guidelines
+- Use clear markdown structure and headings
+- Include relevant emojis for visual organization
+- Add concise single-line comments for clarity
+- Maintain consistent formatting throughout
+- Reference existing documentation files
+
+# ✅ Quality Checks
+- Verify all installation steps
+- Test data source connectivity
+- Validate image rendering
+- Review documentation completeness
+- Ensure no duplicate content

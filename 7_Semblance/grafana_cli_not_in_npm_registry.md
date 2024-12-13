@@ -31,7 +31,7 @@ echo "deb https://packages.grafana.com/oss/deb stable main" | sudo tee /etc/apt/
 sudo apt-get update
 sudo apt-get install grafana
 
-prompt:
+prompts:
 - objective: npm install reason
 - Format: Use emojis
 - Format: one-line comment

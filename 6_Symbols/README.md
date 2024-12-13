@@ -17,7 +17,7 @@
 - Pattern recognition through examples
 - Iterative improvement through practice
 
-prompt:
+prompts:
 - objective: Explain the self learning method by using lacans triad mention the symbols code folder
 - keyresults: mention the methodlogy to learn and update the skills gaps use the files in this folder
 - Format: Create a summary
