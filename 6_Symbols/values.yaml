@@ -1,6 +1,14 @@
-plugins:
-  install:
-    - grafana-image-renderer
+initContainers:
+  - name: install-plugins
+    image: bitnami/grafana:latest
+    command:
+      - grafana-cli
+      - plugins
+      - install
+      - grafana-image-renderer
+    volumeMounts:
+      - name: plugins
+        mountPath: /opt/bitnami/grafana/data/plugins
 
 securityContext:
   runAsUser: 0
