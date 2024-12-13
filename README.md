@@ -19,11 +19,18 @@ Practical Terminal Commands From Your Workstation
 git pull; git add . ; git commit -m "Codespaces" -m "updates"; git push;sleep 3;clear
 ```
 
-Collabrators>
+Collaborators>
 - Cheuk > https://www.linkedin.com/in/ch-c-797533177/
 - Nawal > https://www.linkedin.com/in/nawalc/
 
-prompts:
-- fix grammar spelling
-- fix syntax
-- add remove emojis
+
+prompt:
+- objective: Explain the self learning methodly by using lacans triad
+- keyresults: mention the methodlogy to learn and update the skills gaps use the all the files in this project
+- Format: Create a summary
+- Format: Use emojis
+- Format: one-line comment
+- Format: use markdown structure
+- Rewrite: Eliminate duplicate information
+- Fix: grammar spelling
+- Fix: syntax
