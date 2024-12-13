@@ -19,10 +19,25 @@
 
 
 prompts:
-- objective: Explain the self learning method by using lacans triad mention the environment folder
-- keyresults: mention the methodlogy to learn and update the skills gaps use the files in this folder
-- Format: Create a summary
-- Format: Use emojis
-- Format: one-line comment
-- Format: use markdown structure
-- Rewrite: Eliminate duplicate information
+# 🎯 Prompt Objectives
+- Demonstrate how Lacan's triad (Real, Symbolic, Imaginary) maps to self-learning stages
+- Show how the Environment folder provides practical learning contexts
+- Illustrate UI visualization's role in skill development
+
+# 📊 Expected Results 
+- Document learning methodology using UI dashboards and metrics
+- Track skill gaps through visual progress monitoring
+- Validate learning through practical implementation
+
+# 📝 Format Requirements
+- Structure content with clear markdown headings
+- Include relevant emojis for visual organization
+- Add concise inline comments for clarity
+- Maintain consistent formatting
+- Remove any redundant content
+
+# ✅ Quality Guidelines
+- Ensure all concepts are clearly explained
+- Validate connections between theory and practice
+- Verify completeness of documentation
+- Review for duplicate information
