@@ -132,7 +132,7 @@ minikube stop
 - kubectl configured
 - Sufficient cluster resources
 
-prompt:
+prompts:
 # 🎯 Objective
 - Create a comprehensive list of all commands from project files in logical order
 - Ensure commands are properly categorized and documented
