@@ -1,3 +1,12 @@
+# 🔍 Understanding Grafana API URLs and Rendering
+
+## 🌐 URL Configuration Issue
+- Different URLs for different services // Need to use correct endpoints
+  - JSON data server: `https://humble-couscous-qp6qgj7r9q729jx4-3001.app.github.dev` // Data source endpoint
+  - Grafana service: Needs configuration // Separate service endpoint
+
+## 🛠️ Setup Steps
+1. Locate Grafana Service // Find running service
 The error occurs because you're mixing up two different URLs:
 
 1. Your JSON data server URL:
@@ -97,8 +106,7 @@ curl -H "Authorization: Bearer glsa_Lkp05hJEtZoAj6fSwedfLyIg5uCuDTW0_9fb7c495" \
 curl -H "Authorization: Bearer glsa_Lkp05hJEtZoAj6fSwedfLyIg5uCuDTW0_9fb7c495" "https://humble-couscous-qp6qgj7r9q729jx4-8080.app.github.dev/api/datasources/proxy/uid/fe6t3evvsomioc" --output image.png
 
 prompt:
-- objective: Explain render api errors
-- Format: Create a summary
+- objective: Explain 
 - Format: Use emojis
 - Format: one-line comment
 - Format: use markdown structure

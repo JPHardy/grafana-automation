@@ -1,3 +1,7 @@
+# 🚫 NPM Installation Attempt
+
+## Error Message
+
 npm install -g @grafana/cli
 npm error code E404
 npm error 404 Not Found - GET https://registry.npmjs.org/@grafana%2fcli - Not found
@@ -29,7 +33,6 @@ sudo apt-get install grafana
 
 prompt:
 - objective: npm install reason
-- Format: Create a summary
 - Format: Use emojis
 - Format: one-line comment
 - Format: use markdown structure
