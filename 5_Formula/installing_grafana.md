@@ -1,4 +1,4 @@
-Sure! Here’s the updated summary to include the installation of the Grafana Image Renderer plugin:
+Here’s the updated summary to include the installation of the Grafana Image Renderer plugin:
 
 🎯 **Summary: Installing Grafana with Bitnami Helm Chart and Image Renderer Plugin**
 
@@ -74,7 +74,6 @@ This summary ensures the Image Renderer plugin is included and necessary permiss
 
 prompt:
 - Hello can I use helm and bitnami to install grafana instead?
-- Create a summary
 - Use emojis
 - Use succinct, one-line comment
 - Eliminate duplicate information
