@@ -1,116 +1,136 @@
-I'll help organize all the commands from the project files into a logical sequence. Here's a comprehensive list:
+Based on the project files and error documentation, I'll help organize a more comprehensive command reference that includes error handling and troubleshooting steps. Here's the updated structure:
 
 # 📋 Complete Command Reference
 
-## 🚀 1. Initial Setup
+## 🚀 1. Initial Environment Setup
 ```bash
-# Clone and setup repository
-git pull
-git add .
-git commit -m "Codespaces" -m "updates"
-git push
-```
+# Start Minikube with sufficient resources
+minikube start --memory=4096 --cpus=2
 
-## 🛠️ 2. Minikube Setup
-```bash
-# Start Minikube cluster
-minikube start
-
-# Verify status
+# Verify Minikube status
 minikube status
 
-# Get Minikube IP
-minikube ip
-```
-
-## 📦 3. Grafana Installation
-
-### Create Namespace
-```bash
 # Create monitoring namespace
 kubectl create namespace grafana-monitoring
 
-# Set context to new namespace
-kubectl config set-context grafana-monitoring --namespace=monitoring --cluster=$(kubectl config current-context | cut -d/ -f1) --user=$(kubectl config current-context | cut -d/ -f2)
-
-# Switch to new context
+# Set and verify context
+kubectl config set-context grafana-monitoring --namespace=monitoring
 kubectl config use-context grafana-monitoring
+kubectl config get-contexts
 ```
 
-### Install Grafana
-```bash
-# Add Bitnami repo
-helm repo add bitnami https://charts.bitnami.com/bitnami
+## 📦 2. Grafana Installation with Image Renderer
 
-# Update repos
+### Install via Helm
+```bash
+# Add and update Bitnami repo
+helm repo add bitnami https://charts.bitnami.com/bitnami
 helm repo update
 
-# Get values file
+# Get and customize values file
 helm show values bitnami/grafana > values.yaml
 
+# Add image renderer to values.yaml
+plugins:
+  install:
+    - grafana-image-renderer
+
 # Install Grafana
-helm install grafana bitnami/grafana --namespace grafana-monitoring -f values.yaml
+helm install grafana bitnami/grafana \
+  --namespace grafana-monitoring \
+  -f values.yaml
 ```
 
-## 🔍 4. Verification Commands
+### Verify Installation
 ```bash
 # Check pod status
 kubectl get pods -n grafana-monitoring
+# If pods are failing, check events
+kubectl describe pod -n grafana-monitoring
 
-# Check services
-kubectl get svc -n grafana-monitoring
-
-# Get admin password
-kubectl get secret grafana-admin --namespace grafana-monitoring -o jsonpath="{.data.GF_SECURITY_ADMIN_PASSWORD}" | base64 -d
-
-# Get service URL
-export NODE_PORT=$(kubectl get --namespace grafana-monitoring -o jsonpath="{.spec.ports[0].nodePort}" services grafana)
-export NODE_IP=$(kubectl get nodes --namespace grafana-monitoring -o jsonpath="{.items[0].status.addresses[0].address}")
-echo http://$NODE_IP:$NODE_PORT
+# Get admin password (may need different secret name based on installation)
+kubectl get secret grafana-admin \
+  --namespace grafana-monitoring \
+  -o jsonpath="{.data.GF_SECURITY_ADMIN_PASSWORD}" | base64 -d
 ```
 
-## 🔄 5. Port Forwarding
+## 🔄 3. Port Forwarding and Access
+
+### Local Development
 ```bash
-# Forward Grafana service
+# Forward Grafana UI
 kubectl port-forward -n grafana-monitoring svc/grafana 3000:3000
 
-# Forward JSON data service
+# Forward JSON data source (if using)
 kubectl port-forward -n grafana-monitoring svc/json-datasource 3001:80
 ```
 
-## 📸 6. Screenshot API Commands
+### Codespaces Environment
 ```bash
-# Basic screenshot command
-curl -H "Authorization: Bearer YOUR_API_KEY" \
-"https://YOUR-GRAFANA-URL/render/d-solo/your_dashboard_uid/your_panel_id?orgId=1&width=800&height=600&tz=UTC%2B00%3A00" \
---output image.png
-
-# Dashboard home API test
-curl -H "Authorization: Bearer YOUR_API_KEY" \
-"http://localhost:3000/api/dashboards/home"
+# Use Codespaces URL format
+https://<codespace-name>-<port>.preview.app.github.dev
 ```
 
-## 🔄 7. Upgrade/Maintenance Commands
-```bash
-# Upgrade Grafana installation
-helm upgrade grafana bitnami/grafana --namespace grafana-monitoring -f values.yaml
+## 📸 4. Screenshot API Usage
 
-# Check deployment events
-kubectl describe pod -n grafana-monitoring
+### Setup API Key
+```bash
+# Test API key access
+curl -H "Authorization: Bearer YOUR_API_KEY" \
+  "http://localhost:3000/api/dashboards/home"
+
+# Render dashboard with time range
+curl -H "Authorization: Bearer YOUR_API_KEY" \
+  "http://localhost:3000/render/d-solo/dashboard_uid/panel_id?\
+  orgId=1&from=2024-01-01T00:00:00.000Z&to=2024-01-03T00:00:00.000Z&\
+  width=1000&height=500" \
+  --output dashboard.png
 ```
 
-## 🧹 8. Cleanup Commands
+## 🔧 5. Troubleshooting Commands
+
+### Pod Issues
 ```bash
-# Delete Grafana installation
+# Check pod logs
+kubectl logs -n grafana-monitoring <pod-name>
+
+# Check pod events
+kubectl describe pod -n grafana-monitoring <pod-name>
+
+# Restart deployment
+kubectl rollout restart deployment -n grafana-monitoring grafana
+```
+
+### Plugin Issues
+```bash
+# Check plugin status from within pod
+kubectl exec -it -n grafana-monitoring <pod-name> -- \
+  grafana-cli plugins ls
+```
+
+## 🧹 6. Cleanup
+```bash
+# Remove Grafana installation
 helm uninstall grafana -n grafana-monitoring
 
-# Delete namespace
+# Delete namespace and all resources
 kubectl delete namespace grafana-monitoring
+
+# Stop Minikube if needed
+minikube stop
 ```
 
-> 💡 **Note**: Replace placeholders like `YOUR_API_KEY`, `YOUR-GRAFANA-URL`, and `your_dashboard_uid` with actual values from your setup.
+> 💡 **Common Issues & Solutions**:
+- Secret not found: Verify secret name matches installation
+- Port forwarding issues: Use Codespaces URL format
+- Image renderer fails: Check plugin installation in values.yaml
+- API errors: Verify API key has correct permissions
 
-> ⚠️ **Important**: Ensure you're in the correct namespace before running commands. Use `kubectl config get-contexts` to verify your current context.
+> ⚠️ **Prerequisites**:
+- Minikube or K8s cluster running
+- Helm 3.x installed
+- kubectl configured
+- Sufficient cluster resources
 
 prompt:
 # 🎯 Objective
