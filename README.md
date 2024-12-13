@@ -19,6 +19,10 @@ Practical Terminal Commands From Your Workstation
 git pull; git add . ; git commit -m "Codespaces" -m "updates"; git push;sleep 3;clear
 ```
 
+Collabrators>
+- Cheuk > https://www.linkedin.com/in/ch-c-797533177/
+- Nawal > https://www.linkedin.com/in/nawalc/
+
 prompts:
 - fix grammar spelling
 - fix syntax
