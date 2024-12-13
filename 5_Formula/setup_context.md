@@ -1,0 +1,1 @@
+`kubectl config use-context grafana-monitoring` This helps you switch over to your namespace and save time!
