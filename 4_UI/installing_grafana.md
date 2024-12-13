@@ -28,3 +28,11 @@ Did you know there are enterprise versions of the Bitnami catalog? For enhanced 
 WARNING: There are "resources" sections in the chart not set. Using "resourcesPreset" is not recommended for production. For production installations, please set the following values according to your workload needs:
   - grafana.resources
 +info https://kubernetes.io/docs/concepts/configuration/manage-resources-containers/
+
+prompt:
+- objective: Explain the install
+- Format: Create a summary
+- Format: Use emojis
+- Format: one-line comment
+- Format: use markdown structure
+- Rewrite: Eliminate duplicate information

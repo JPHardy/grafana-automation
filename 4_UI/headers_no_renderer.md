@@ -38,3 +38,10 @@ x-served-by: tunnels-prod-rel-uks1-v3-cluster
 x-xss-protection: 1; mode=block
 strict-transport-security: max-age=31536000; includeSubDomains
 
+prompt:
+- objective: explain the headers
+- Format: Create a summary
+- Format: Use emojis
+- Format: one-line comment
+- Format: use markdown structure
+- Rewrite: Eliminate duplicate information

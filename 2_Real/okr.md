@@ -85,3 +85,11 @@
 - Scaling strategy
 - Additional data sources
 - Advanced visualization requirements by creating a markup
+
+prompt:
+- objective: Set objective and key results
+- Format: Create a summary
+- Format: Use emojis
+- Format: one-line comment
+- Format: use markdown structure
+- Rewrite: Eliminate duplicate information

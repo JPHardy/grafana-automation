@@ -11,3 +11,11 @@ kubectl config current-context
 kubectl config get-contexts
 
 We can use context to save time, we will always operate within the namespace of grafana-monitoring.
+
+prompt:
+- objective: install grafana with image renderer
+- Format: Create a summary
+- Format: Use emojis
+- Format: one-line comment
+- Format: use markdown structure
+- Rewrite: Eliminate duplicate information

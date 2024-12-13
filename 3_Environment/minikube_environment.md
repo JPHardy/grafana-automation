@@ -39,6 +39,10 @@ Curl is the Swiss Army knife 🛠️ for testing APIs from the terminal:
 
 ---
 
-prompts:
-- write with emojis
-- explain the environment
+prompt:
+- objective: Explain the environment
+- Format: Create a summary
+- Format: Use emojis
+- Format: one-line comment
+- Format: use markdown structure
+- Rewrite: Eliminate duplicate information
