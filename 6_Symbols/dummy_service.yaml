@@ -1,0 +1,44 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: dummy-deployment
+  namespace: grafana-monitoring
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: dummy-deployment    # Changed from json-datasource
+  template:
+    metadata:
+      labels:
+        app: dummy-deployment  # Changed to match selector
+    spec:
+      containers:
+      - name: dummy-deployment # Changed for consistency
+        image: python:3.9-slim
+        ports:
+        - containerPort: 3001
+        volumeMounts:
+        - name: source-code
+          mountPath: /app
+        workingDir: /app
+        command: ["/bin/sh", "-c"]
+        args:
+        - pip install flask && python server.py
+      volumes:
+      - name: source-code
+        configMap:
+          name: dummy-data     # This matches your ConfigMap name
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: dummy-service
+  namespace: grafana-monitoring
+spec:
+  selector:
+    app: dummy-deployment    # Changed to match deployment labels
+  ports:
+  - port: 80
+    targetPort: 3001

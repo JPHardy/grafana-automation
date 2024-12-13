@@ -1,0 +1,33 @@
+plugins:
+  install:
+    - grafana-image-renderer
+
+securityContext:
+  runAsUser: 0
+  fsGroup: 1000
+
+extraVolumes:
+  - name: plugins
+    emptyDir: {}
+
+extraVolumeMounts:
+  - name: plugins
+    mountPath: /opt/bitnami/grafana/data/plugins
+    subPath: plugins
+    readOnly: false
+
+admin:
+  user: admin
+  password: your-password
+
+persistence:
+  enabled: true
+  size: 30Mi
+
+service:
+  type: NodePort
+  nodePorts:
+    grafana: 30300
+
+metrics:
+  enabled: true

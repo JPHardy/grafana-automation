@@ -1,0 +1,60 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: dummy-data
+  namespace: grafana-monitoring
+data:
+  server.py: |
+    from flask import Flask, jsonify
+    import json
+
+    app = Flask(__name__)
+
+    # Load data from JSON file
+    with open('data.json', 'r') as file:
+        data = json.load(file)
+
+    @app.route('/users')
+    def get_users():
+        return jsonify(data['users'])
+
+    @app.route('/metrics')
+    def get_metrics():
+        return jsonify(data['metrics'])
+
+    if __name__ == '__main__':
+        app.run(host='0.0.0.0', port=3001)
+  data.json: |
+    {
+      "users": [
+        {
+          "time": "2024-01-01T00:00:00Z",
+          "value": 100
+        },
+        {
+          "time": "2024-01-02T00:00:00Z",
+          "value": 150
+        },
+        {
+          "time": "2024-01-03T00:00:00Z",
+          "value": 200
+        }
+      ],
+      "metrics": [
+        {
+          "time": "2024-01-01T00:00:00Z",
+          "cpu": 45,
+          "memory": 60
+        },
+        {
+          "time": "2024-01-02T00:00:00Z",
+          "cpu": 55,
+          "memory": 70
+        },
+        {
+          "time": "2024-01-03T00:00:00Z",
+          "cpu": 65,
+          "memory": 80
+        }
+      ]
+    }
