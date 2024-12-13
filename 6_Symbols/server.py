@@ -17,3 +17,11 @@ def get_metrics():
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=3001)
+
+# prompts:
+# - objective: cli install with image renderer
+# - Format: Create a summary
+# - Format: Use emojis
+# - Format: one-line comment
+# - Format: use markdown structure
+# - Rewrite: Eliminate duplicate information

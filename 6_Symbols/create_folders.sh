@@ -22,3 +22,11 @@ for folder in "${!folders[@]}"; do
 done
 
 echo "Folder structure created with README.md files."
+
+# prompts:
+# - objective: cli install with image renderer
+# - Format: Create a summary
+# - Format: Use emojis
+# - Format: one-line comment
+# - Format: use markdown structure
+# - Rewrite: Eliminate duplicate information

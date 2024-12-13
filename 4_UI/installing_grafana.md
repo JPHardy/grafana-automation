@@ -1,3 +1,6 @@
+Output
+---
+```
 helm install grafana bitnami/grafana --namespace grafana-monitoring
 NAME: grafana
 LAST DEPLOYED: Fri Dec 13 14:36:51 2024
@@ -28,11 +31,12 @@ Did you know there are enterprise versions of the Bitnami catalog? For enhanced 
 WARNING: There are "resources" sections in the chart not set. Using "resourcesPreset" is not recommended for production. For production installations, please set the following values according to your workload needs:
   - grafana.resources
 +info https://kubernetes.io/docs/concepts/configuration/manage-resources-containers/
+```
 
-prompt:
-- objective: Explain the install
-- Format: Create a summary
-- Format: Use emojis
-- Format: one-line comment
-- Format: use markdown structure
-- Rewrite: Eliminate duplicate information
+prompts:
+# 🚀 Installing Grafana with Helm
+
+## 📋 Summary
+This document explains the Grafana installation process using Helm and provides guidance on accessing and configuring the deployment.
+
+## 🎯 Command Used

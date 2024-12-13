@@ -37,12 +37,44 @@ Curl is the Swiss Army knife 🛠️ for testing APIs from the terminal:
 3. Mock APIs with **JSON Server**, extend functionality with **Flask**, and test it all with **Curl** 🕵️.
 4. Minikube and Grafana give a Kubernetes-native monitoring and API-hosting environment 🌟.
 
+### **Getting Started with Minikube 🚀**
+Here are the essential commands to get your Minikube environment up and running:
+```bash
+# Start Minikube
+minikube start
+
+# Check Minikube status
+minikube status
+
+
+
 ---
 
-prompt:
-- objective: Explain the environment
-- Format: Create a summary
-- Format: Use emojis
-- Format: one-line comment
-- Format: use markdown structure
-- Rewrite: Eliminate duplicate information
+prompts:
+# 🎯 Objectives
+- Document Minikube environment setup and components
+- Explain integration with Grafana monitoring
+- Describe API development workflow
+
+# 📋 Requirements
+- Clear explanation of each component's role
+- Step-by-step setup instructions
+- Integration points between components
+
+# 📝 Format Guidelines
+- Use descriptive headings with emojis
+- Include concise code examples
+- Add helpful comments
+- Maintain consistent markdown structure
+
+# ✅ Quality Checks
+- Verify command syntax
+- Test component interactions
+- Review for clarity and completeness
+- Remove redundant information
+
+# 🔄 Expected Outcomes
+- Working Minikube environment
+- Configured Grafana dashboards
+- Functional API endpoints
+- Complete monitoring setup

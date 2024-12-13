@@ -31,3 +31,11 @@ service:
 
 metrics:
   enabled: true
+
+# prompts:
+# - objective: updated values for grafana in the bitnami grafana chart
+# - Format: Create a summary
+# - Format: Use emojis
+# - Format: one-line comment
+# - Format: use markdown structure
+# - Rewrite: Eliminate duplicate information

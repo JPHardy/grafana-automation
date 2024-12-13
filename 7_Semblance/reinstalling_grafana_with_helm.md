@@ -10,7 +10,7 @@ Events:
   Normal   Pulled            2m39s (x3 over 3m28s)  kubelet            Container image "docker.io/bitnami/grafana:11.3.0-debian-12-r3" already present on machine
   Warning  BackOff           2m8s (x12 over 3m26s)  kubelet            Back-off restarting failed container grafana in pod grafana-6996cf7c74-nc8bn_grafana-monitoring(8e92878a-4687-4324-99b3-9f557c403ce0)
 
-  prompt:
+  prompts:
 - objective: Grafana install with helm
 - Format: Create a summary
 - Format: Use emojis
