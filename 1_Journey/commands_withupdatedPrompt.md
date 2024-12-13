@@ -113,7 +113,39 @@ kubectl delete namespace grafana-monitoring
 > ⚠️ **Important**: Ensure you're in the correct namespace before running commands. Use `kubectl config get-contexts` to verify your current context.
 
 prompt:
-- agent: write all the commands in a order 
-- agent: scan all files and write all the commands in a order
-- action:drag and drop the folder
+# 🎯 Objective
+- Create a comprehensive list of all commands from project files in logical order
+- Ensure commands are properly categorized and documented
+- Include relevant context and prerequisites
+
+# 📋 Requirements
+- Scan all project files for commands and scripts
+- Organize commands by workflow stage/purpose
+- Add descriptions and usage notes
+- Validate command syntax
+- Include error handling guidance
+
+# 🔄 Actions
+1. Review all project files systematically
+2. Extract and document commands
+3. Group related commands together
+4. Add proper formatting and structure
+5. Test command sequences
+6. Update documentation with findings
+
+# 📝 Format Guidelines
+- Use clear section headers
+- Include command descriptions
+- Add usage examples
+- Note prerequisites
+- Document expected outputs
+- Highlight important warnings
+
+# 🏷️ Categories to Include
+- Setup/Installation
+- Configuration
+- Operation/Usage
+- Maintenance
+- Troubleshooting
+- Cleanup
 
