@@ -1,3 +1,6 @@
+Here is a concise summary of the Grafana installation with the image renderer plugin:
+
+```yaml
 # Grafana Installation with Image Renderer Plugin
 initContainers:
   - name: install-plugins
@@ -40,3 +43,13 @@ service:
 
 metrics:
   enabled: true # Enable metrics
+```
+
+**Objective**: Install Grafana with the image renderer plugin 🚀  
+**Steps**:  
+1. **Install Plugin**: Use `grafana-cli` in an init container 🛠️  
+2. **Permissions**: Set `securityContext` to run as root and adjust file system group 👥  
+3. **Persistence**: Enable data persistence with a 30Mi size for storage 💾  
+4. **Expose**: Service set as NodePort for access at port 30300 🌐
+
+**Format**: Simplified with necessary configuration and environment setup
