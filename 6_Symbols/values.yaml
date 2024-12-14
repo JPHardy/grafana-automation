@@ -1,42 +1,23 @@
-# Grafana Installation with Image Renderer Plugin
-initContainers:
-  - name: install-plugins
-    image: bitnami/grafana:latest
-    command:
-      - grafana-cli
-      - plugins
-      - install
-      - grafana-image-renderer
-    volumeMounts:
-      - name: plugins
-        mountPath: /opt/bitnami/grafana/data/plugins
+grafana:
+  adminPassword: "your-password"
+  env:
+    GF_RENDERING_ENABLED: "true"
+    GF_RENDERING_SERVER_URL: "http://grafana-renderer:3000/render"
+  persistence:
+    enabled: true
+    size: 30Mi
+  service:
+    type: NodePort
+    port: 3000
+  plugins:
+    - grafana-image-renderer
 
-securityContext:
-  runAsUser: 0 # Run as root
-  fsGroup: 1000 # Set file system group
-
-extraVolumes:
-  - name: plugins
-    emptyDir: {} # Temporary storage for plugins
-
-extraVolumeMounts:
-  - name: plugins
-    mountPath: /opt/bitnami/grafana/data/plugins
-    subPath: plugins
-    readOnly: false # Allow write access
-
-admin:
-  user: admin # Admin username
-  password: your-password # Set your own password
-
-persistence:
-  enabled: true # Enable data persistence
-  size: 30Mi # Set persistence size
-
-service:
-  type: NodePort # Expose service via NodePort
-  nodePorts:
-    grafana: 30300 # Grafana port
-
-metrics:
-  enabled: true # Enable metrics
+grafanaRenderer:
+  enabled: true
+  image:
+    repository: grafana/grafana-image-renderer
+    tag: latest
+  service:
+    type: ClusterIP
+    port: 3000
+  replicaCount: 1
