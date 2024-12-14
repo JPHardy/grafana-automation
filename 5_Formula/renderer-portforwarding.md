@@ -1,0 +1,73 @@
+To set up port forwarding for the **Grafana Image Renderer** service in your Kubernetes cluster, you can use the following `kubectl` command. This command will forward the **Grafana Image Renderer** service's port (typically `3000`) to a local port, making it accessible for rendering tasks:
+
+### Port Forward Command for the Renderer:
+
+```bash
+kubectl port-forward -n grafana-monitoring svc/grafana-renderer 3001:3000
+```
+
+### Explanation:
+- `-n grafana-monitoring`: Specifies the namespace where your **Grafana** and **Grafana Image Renderer** services are deployed (in this case, `grafana-monitoring`).
+- `svc/grafana-renderer`: Refers to the **Grafana Image Renderer** service.
+- `3001:3000`: Maps port `3000` inside the container (default for **Grafana Image Renderer**) to local port `3001` on your machine.
+
+### Steps:
+1. Run this command in your terminal.
+2. Access the **Grafana Image Renderer** via `http://localhost:3001/render` from your local machine (if you're using **remote rendering** in Grafana).
+
+This allows the **Grafana** container to make requests to the renderer container while the port forwarding is active.
+
+@rifaterdemsahin ➜ /workspaces/grafana-automation (main) $ kubectl port-forward -n grafana-monitoring svc/grafana-renderer 3001:3000
+Error from server (NotFound): services "grafana-renderer" not found
+@rifaterdemsahin ➜ /workspaces/grafana-automation (main) $ 
+
+
+The error you're seeing, **"services 'grafana-renderer' not found"**, indicates that the **Grafana Image Renderer** service is not deployed in the `grafana-monitoring` namespace, or it might be using a different name.
+
+To resolve this, follow these steps:
+
+### 1. **Verify the Service Name and Namespace**
+   First, check if the **Grafana Image Renderer** service is available in the expected namespace (`grafana-monitoring` in your case). You can do this by running the following command:
+
+   ```bash
+   kubectl get svc -n grafana-monitoring
+   ```
+
+   This will list all services in the `grafana-monitoring` namespace. Ensure that the service name is indeed `grafana-renderer` or check the correct service name if it is different.
+
+### 2. **Check for the Correct Namespace**
+   If the service is deployed in a different namespace, adjust the namespace in the `kubectl port-forward` command. For example, if it’s deployed in the `default` namespace, you would run:
+
+   ```bash
+   kubectl port-forward -n default svc/grafana-renderer 3001:3000
+   ```
+
+### 3. **Deploy the Renderer If Missing**
+   If the **Grafana Image Renderer** service does not exist, it might not have been deployed yet. Ensure that you have deployed the **Grafana Image Renderer** using the appropriate Helm configuration or Kubernetes manifest.
+
+   You can verify that the renderer is included by checking your `values.yaml` (if you're using Helm) and ensuring `grafanaRenderer.enabled` is set to `true`.
+
+### 4. **Deploy Using Helm (If Not Already Deployed)**
+   If the service is not found, and you're using the Bitnami Helm chart, you can redeploy or install the renderer with the following Helm command:
+
+   ```bash
+   helm upgrade --install grafana bitnami/grafana -f values.yaml
+   ```
+
+   Make sure that the `values.yaml` file includes the following settings for enabling the renderer:
+
+```yaml
+grafanaRenderer:
+  enabled: true
+```
+
+Once deployed, retry the port-forward command.
+
+### 5. **Retry Port Forwarding**
+   After ensuring the service exists, run the `kubectl port-forward` command again:
+
+   ```bash
+   kubectl port-forward -n grafana-monitoring svc/grafana-renderer 3001:3000
+   ```
+
+This should establish the port forwarding successfully.
