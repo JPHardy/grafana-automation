@@ -21,6 +21,9 @@ grafana:
       volumeMounts:
         - name: grafana-storage
           mountPath: /var/lib/grafana
+  extraVolumes:
+    - name: grafana-storage
+      emptyDir: {}
 
 grafanaRenderer:
   enabled: true
