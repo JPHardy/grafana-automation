@@ -5,7 +5,7 @@ grafana:
     GF_RENDERING_SERVER_URL: "http://grafana-renderer:3000/render"
   persistence:
     enabled: true
-    size: 30Mi
+    size: 100Mi
   service:
     type: NodePort
     port: 3000
@@ -18,6 +18,8 @@ grafanaRenderer:
     repository: grafana/grafana-image-renderer
     tag: latest
   service:
-    type: ClusterIP
+    type: NodePort
     port: 3000
   replicaCount: 1
+
+# prompt: update this to run on minikube
