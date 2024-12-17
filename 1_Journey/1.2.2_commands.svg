@@ -1,22 +1,32 @@
-<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
-  <path fill="#f3f4f6" stroke="#000" d="M10 10h200v50H10z"/>
-  <text x="20" y="40" font-family="Arial" font-size="14">📋 Complete Command Reference</text>
-  <path stroke="#000" d="M110 60v40"/>
-  <path fill="#f3f4f6" stroke="#000" d="M10 100h200v50H10z"/>
-  <text x="20" y="130" font-family="Arial" font-size="14">🚀 1. Initial Environment Setup</text>
-  <path stroke="#000" d="M110 150v40"/>
-  <path fill="#f3f4f6" stroke="#000" d="M10 190h200v50H10z"/>
-  <text x="20" y="220" font-family="Arial" font-size="14">Start Minikube with sufficient resources</text>
-  <path stroke="#000" d="M110 240v40"/>
-  <path fill="#f3f4f6" stroke="#000" d="M10 280h200v50H10z"/>
-  <text x="20" y="310" font-family="Arial" font-size="14">Verify Minikube status</text>
-  <path stroke="#000" d="M110 330v40"/>
-  <path fill="#f3f4f6" stroke="#000" d="M10 370h200v50H10z"/>
-  <text x="20" y="400" font-family="Arial" font-size="14">Create monitoring namespace</text>
-  <path stroke="#000" d="M110 420v40"/>
-  <path fill="#f3f4f6" stroke="#000" d="M10 460h200v50H10z"/>
-  <text x="20" y="490" font-family="Arial" font-size="14">Set and verify context</text>
-  <path stroke="#000" d="M110 510v40"/>
-  <path fill="#f3f4f6" stroke="#000" d="M10 550h200v50H10z"/>
-  <text x="20" y="580" font-family="Arial" font-size="14">📦 2. Grafana Installation with Image Renderer</text>
+<svg width="800" height="800" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .box { fill: #e0f7fa; stroke: #000; }
+    .box1 { fill: #ffccbc; }
+    .box2 { fill: #dcedc8; }
+    .box3 { fill: #f8bbd0; }
+    .box4 { fill: #c5cae9; }
+    .box5 { fill: #fff9c4; }
+    .box6 { fill: #b2ebf2; }
+    text { font-family: Arial; font-size: 14px; }
+  </style>
+  <path class="box box1" d="M10 10h780v70H10z"/>
+  <text x="20" y="50">📋 Complete Command Reference</text>
+  <path stroke="#000" d="M400 80v40"/>
+  <path class="box box2" d="M10 120h780v70H10z"/>
+  <text x="20" y="160">🚀 1. Initial Environment Setup</text>
+  <path stroke="#000" d="M400 190v40"/>
+  <path class="box box3" d="M10 230h780v70H10z"/>
+  <text x="20" y="270">Start Minikube with sufficient resources</text>
+  <path stroke="#000" d="M400 300v40"/>
+  <path class="box box4" d="M10 340h780v70H10z"/>
+  <text x="20" y="380">Verify Minikube status</text>
+  <path stroke="#000" d="M400 410v40"/>
+  <path class="box box5" d="M10 450h780v70H10z"/>
+  <text x="20" y="490">Create monitoring namespace</text>
+  <path stroke="#000" d="M400 520v40"/>
+  <path class="box box6" d="M10 560h780v70H10z"/>
+  <text x="20" y="600">Set and verify context</text>
+  <path stroke="#000" d="M400 630v40"/>
+  <path class="box" d="M10 670h780v70H10z"/>
+  <text x="20" y="710">📦 2. Grafana Installation with Image Renderer</text>
 </svg>
