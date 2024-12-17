@@ -92,6 +92,13 @@
       <pre style="font-family: Arial; font-size:14px">Troubleshooting Commands</pre>
     </div>
   </foreignObject>
+    <foreignObject x="60" y="1410" width="680" height="1480">
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <pre style="font-family: Arial; font-size:14px">
+        // Your sample code here
+      </pre>
+    </div>
+  </foreignObject>
   <path stroke="#000" d="M400 1290v40"/>
   <path class="box box6" d="M10 1330h780v70H10z"/>
   <foreignObject x="20" y="1340" width="760" height="50">
