@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36" version="24.7.17">
   <diagram name="Page-1" id="Eh_Mw41eKuJ2O2LDKg58">
-    <mxGraphModel dx="3912" dy="2596" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="3428" dy="2290" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -45,11 +45,14 @@
         <mxCell id="6" value="curl over the render-image container" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
           <mxGeometry x="180" y="1722.6100000000001" width="120" height="180" as="geometry" />
         </mxCell>
+        <mxCell id="vKAjqauAh3gj6h31wUOL-78" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="7" target="vKAjqauAh3gj6h31wUOL-77">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="7" value="curl command" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
           <mxGeometry x="640" y="1730" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="8" value="curl command with dashboards" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
-          <mxGeometry x="640" y="1810" width="120" height="60" as="geometry" />
+        <mxCell id="8" value="&lt;div&gt;# Check plugin status from within pod&lt;/div&gt;&lt;div&gt;kubectl exec -it -n grafana-monitoring &amp;lt;pod-name&amp;gt; -- \&lt;/div&gt;&lt;div&gt;&amp;nbsp; grafana-cli plugins ls&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
+          <mxGeometry x="627.72" y="2010" width="792.28" height="60" as="geometry" />
         </mxCell>
         <mxCell id="9" value="SYMBOLS" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
           <mxGeometry x="640" y="-32.61" width="120" height="60" as="geometry" />
@@ -224,6 +227,24 @@
         </mxCell>
         <mxCell id="vKAjqauAh3gj6h31wUOL-76" value="&lt;div&gt;# Generate API key from Grafana UI&lt;/div&gt;&lt;div&gt;# Navigate to: https://&amp;lt;codespace-name&amp;gt;-3000.preview.app.github.dev/org/serviceaccounts&lt;/div&gt;&lt;div&gt;# Generate and copy the API key&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;# Test API key access&lt;/div&gt;&lt;div&gt;curl -H &quot;Authorization: Bearer &amp;lt;your-api-key&amp;gt;&quot; &quot;http://localhost:3000/api/dashboards/home&quot;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
           <mxGeometry x="649.78" y="1480" width="760.22" height="151" as="geometry" />
+        </mxCell>
+        <mxCell id="vKAjqauAh3gj6h31wUOL-77" value="&lt;div&gt;curl -H &quot;Authorization: Bearer &amp;lt;your-api-key&amp;gt;&quot; \&lt;/div&gt;&lt;div&gt;&amp;nbsp; &quot;https://&amp;lt;codespace-name&amp;gt;-3000.preview.app.github.dev/render/d-solo/fe6uh0ry1962oe/1?\&lt;/div&gt;&lt;div&gt;&amp;nbsp; orgId=1&amp;amp;from=2024-01-01T00:00:00.000Z&amp;amp;to=2024-01-03T00:00:00.000Z&amp;amp;\&lt;/div&gt;&lt;div&gt;&amp;nbsp; width=1000&amp;amp;height=500&quot; \&lt;/div&gt;&lt;div&gt;&amp;nbsp; --output dashboard.png&lt;/div&gt;" style="whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="840" y="1705" width="570" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="vKAjqauAh3gj6h31wUOL-79" value="&lt;div&gt;# Check pod logs&lt;/div&gt;&lt;div&gt;kubectl logs -n grafana-monitoring &amp;lt;pod-name&amp;gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;# Check pod events&lt;/div&gt;&lt;div&gt;kubectl describe pod -n grafana-monitoring &amp;lt;pod-name&amp;gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;# Restart deployment&lt;/div&gt;&lt;div&gt;kubectl rollout restart deployment -n grafana-monitoring grafana&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="1660" y="1170" width="600" height="650" as="geometry" />
+        </mxCell>
+        <mxCell id="vKAjqauAh3gj6h31wUOL-80" value="plugin" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="180" y="1960" width="120" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="vKAjqauAh3gj6h31wUOL-81" value="&lt;div&gt;needed ?&amp;nbsp;&lt;/div&gt;&lt;div&gt;with multi clusters&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="1654" y="1960" width="160" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="vKAjqauAh3gj6h31wUOL-82" value="cleanup" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="1">
+          <mxGeometry x="-120" y="2180" width="200" height="101" as="geometry" />
+        </mxCell>
+        <mxCell id="vKAjqauAh3gj6h31wUOL-83" value="&lt;div&gt;# Remove Grafana installation&lt;/div&gt;&lt;div&gt;helm uninstall grafana -n grafana-monitoring&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;# Delete namespace and all resources&lt;/div&gt;&lt;div&gt;kubectl delete namespace grafana-monitoring&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;# Stop Minikube if needed&lt;/div&gt;&lt;div&gt;minikube stop&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="633.75" y="2165.25" width="792.28" height="130.5" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
