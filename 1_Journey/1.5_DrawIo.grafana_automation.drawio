@@ -1,30 +1,30 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36" version="24.7.17">
   <diagram name="Page-1" id="Eh_Mw41eKuJ2O2LDKg58">
-    <mxGraphModel dx="2738" dy="2377" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="3085" dy="2596" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
         <mxCell id="vKAjqauAh3gj6h31wUOL-66" value="&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;ARCHITECTURE" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
-          <mxGeometry x="920" y="25" width="550" height="180" as="geometry" />
+          <mxGeometry x="1180" y="32.39" width="550" height="180" as="geometry" />
         </mxCell>
         <mxCell id="vKAjqauAh3gj6h31wUOL-32" value="REAL" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontColor=#333333;" vertex="1" parent="1">
           <mxGeometry x="-810" y="-40" width="730" height="524" as="geometry" />
         </mxCell>
         <mxCell id="k9wu2lNZHmlqQ1E5e7p3-1" value="minikube start" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
-          <mxGeometry x="380" y="60" width="120" height="60" as="geometry" />
+          <mxGeometry x="640" y="67.39" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="k9wu2lNZHmlqQ1E5e7p3-2" value="minikube status" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
-          <mxGeometry x="380" y="180" width="120" height="60" as="geometry" />
+          <mxGeometry x="640" y="187.39" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="k9wu2lNZHmlqQ1E5e7p3-3" value="kubectl create namespace grafana-monitoring" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
-          <mxGeometry x="380" y="290" width="430" height="60" as="geometry" />
+          <mxGeometry x="640" y="297.39" width="430" height="60" as="geometry" />
         </mxCell>
         <mxCell id="k9wu2lNZHmlqQ1E5e7p3-4" value="kubectl config set-context grafana-monitoring --namespace=grafana-monitoring&lt;div&gt;kubectl config use-context grafana-monitoring&amp;nbsp;&lt;/div&gt;&lt;div&gt;kubectl config get-contexts&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
-          <mxGeometry x="380" y="400" width="430" height="60" as="geometry" />
+          <mxGeometry x="640" y="407.39" width="430" height="60" as="geometry" />
         </mxCell>
         <mxCell id="k9wu2lNZHmlqQ1E5e7p3-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="k9wu2lNZHmlqQ1E5e7p3-1" edge="1">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="440" y="180" as="targetPoint" />
+            <mxPoint x="700" y="187.39" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="3" style="edgeStyle=orthogonalEdgeStyle;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;shape=flexArrow;" parent="1" source="2" target="k9wu2lNZHmlqQ1E5e7p3-1" edge="1">
@@ -46,19 +46,19 @@
           <mxGeometry x="180" y="1230" width="120" height="180" as="geometry" />
         </mxCell>
         <mxCell id="7" value="curl command" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
-          <mxGeometry x="380" y="1230" width="120" height="60" as="geometry" />
+          <mxGeometry x="640" y="1237.39" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="8" value="curl command with dashboards" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
-          <mxGeometry x="380" y="1310" width="120" height="60" as="geometry" />
+          <mxGeometry x="640" y="1317.39" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="9" value="SYMBOLS" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
-          <mxGeometry x="380" y="-40" width="120" height="60" as="geometry" />
+          <mxGeometry x="640" y="-32.61" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="10" value="JOURNEY" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
           <mxGeometry x="180" y="-40" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="11" value="SEMBLANCE" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" parent="1" vertex="1">
-          <mxGeometry x="1470" y="-50" width="120" height="60" as="geometry" />
+          <mxGeometry x="1730" y="-42.61" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="13" value="ENVIRONMENTS" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" parent="1" vertex="1">
           <mxGeometry x="20" y="-35" width="120" height="60" as="geometry" />
@@ -85,10 +85,10 @@
           <mxGeometry x="-390" y="404" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="23" value="" style="sketch=0;html=1;aspect=fixed;strokeColor=none;shadow=0;align=center;verticalAlign=top;fillColor=#2D9C5E;shape=mxgraph.gcp2.check" parent="1" vertex="1">
-          <mxGeometry x="480" y="50" width="37.5" height="30" as="geometry" />
+          <mxGeometry x="740" y="57.39" width="37.5" height="30" as="geometry" />
         </mxCell>
         <mxCell id="24" value="" style="aspect=fixed;html=1;points=[];align=center;image;fontSize=12;image=img/lib/azure2/general/Globe_Error.svg;" parent="1" vertex="1">
-          <mxGeometry x="487.72" y="1220" width="22.06" height="26" as="geometry" />
+          <mxGeometry x="747.72" y="1227.39" width="22.06" height="26" as="geometry" />
         </mxCell>
         <mxCell id="vKAjqauAh3gj6h31wUOL-24" value="&lt;pre style=&quot;border-top-width: var(--borderRadiusMedium); border-right-width: var(--borderRadiusMedium); border-left-width: var(--borderRadiusMedium); border-bottom-width: var(--borderRadiusMedium); border-style: solid; border-top-color: var(--colorNeutralStroke1); border-right-color: var(--colorNeutralStroke1); border-left-color: var(--colorNeutralStroke1); border-bottom-color: var(--colorNeutralStroke1); padding: 10px; text-wrap-mode: wrap; overflow-wrap: break-word; color: rgb(36, 36, 36); font-size: 14px; text-align: left; background-color: rgb(255, 255, 255);&quot;&gt;&lt;code style=&quot;color: var(--colorNeutralForeground1); background-color: var(--colorNeutralBackground1); overflow-wrap: break-word;&quot;&gt;í ½í´„ Phase 2: Metrics Integration&lt;/code&gt;&lt;/pre&gt;" style="whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontColor=#333333;rounded=1;" vertex="1" parent="1">
           <mxGeometry x="-390" y="304" width="120" height="60" as="geometry" />
@@ -100,7 +100,7 @@
           <mxGeometry x="-380" y="184" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="vKAjqauAh3gj6h31wUOL-30" value="FORMULAS" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
-          <mxGeometry x="930" y="-50" width="120" height="60" as="geometry" />
+          <mxGeometry x="1190" y="-42.61" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="vKAjqauAh3gj6h31wUOL-31" value="&lt;span style=&quot;color: rgb(51, 51, 51);&quot;&gt;gpt &amp;gt; mermaid &amp;gt; draw.io&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
           <mxGeometry x="-263" y="-26" width="120" height="60" as="geometry" />
@@ -109,13 +109,13 @@
           <mxGeometry x="-800" y="550" width="695.81" height="356.39" as="geometry" />
         </mxCell>
         <mxCell id="vKAjqauAh3gj6h31wUOL-34" value="UI" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#1ba1e2;strokeColor=#006EAF;fontColor=#ffffff;" vertex="1" parent="1">
-          <mxGeometry x="670" y="-40" width="120" height="60" as="geometry" />
+          <mxGeometry x="400" y="-40" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="vKAjqauAh3gj6h31wUOL-35" value="isolate" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
-          <mxGeometry x="930" y="290" width="120" height="60" as="geometry" />
+          <mxGeometry x="1190" y="297.39" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="vKAjqauAh3gj6h31wUOL-36" value="set context" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
-          <mxGeometry x="930" y="400" width="120" height="60" as="geometry" />
+          <mxGeometry x="1190" y="407.39" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="vKAjqauAh3gj6h31wUOL-37" value="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
           <mxGeometry x="-810" y="384" width="40" height="42.39" as="geometry" />
@@ -127,52 +127,52 @@
           <mxGeometry x="160" y="-70" width="40" height="42.39" as="geometry" />
         </mxCell>
         <mxCell id="vKAjqauAh3gj6h31wUOL-40" value="4" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
-          <mxGeometry x="650" y="-60" width="40" height="42.39" as="geometry" />
+          <mxGeometry x="380" y="-60" width="40" height="42.39" as="geometry" />
         </mxCell>
         <mxCell id="vKAjqauAh3gj6h31wUOL-41" value="5" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
-          <mxGeometry x="360" y="-60" width="40" height="42.39" as="geometry" />
+          <mxGeometry x="620" y="-52.61" width="40" height="42.39" as="geometry" />
         </mxCell>
         <mxCell id="vKAjqauAh3gj6h31wUOL-43" value="6" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
-          <mxGeometry x="910" y="-70" width="40" height="42.39" as="geometry" />
+          <mxGeometry x="1170" y="-62.61" width="40" height="42.39" as="geometry" />
         </mxCell>
         <mxCell id="vKAjqauAh3gj6h31wUOL-44" value="7" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
-          <mxGeometry x="1450" y="-77.39" width="40" height="42.39" as="geometry" />
+          <mxGeometry x="1710" y="-70" width="40" height="42.39" as="geometry" />
         </mxCell>
         <mxCell id="vKAjqauAh3gj6h31wUOL-45" value="&lt;h4&gt;&lt;font face=&quot;ui-monospace, SFMono-Regular, SF Mono, Menlo, Consolas, Liberation Mono, monospace&quot;&gt;&lt;span style=&quot;font-size: 13.6px;&quot;&gt;helm repo add bitnami https://charts.bitnami.com/bitnami helm repo update&lt;/span&gt;&lt;/font&gt;&lt;/h4&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
-          <mxGeometry x="380" y="500" width="430" height="60" as="geometry" />
+          <mxGeometry x="640" y="507.39" width="430" height="60" as="geometry" />
         </mxCell>
         <mxCell id="vKAjqauAh3gj6h31wUOL-46" value="helm chart install" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
-          <mxGeometry x="930" y="500" width="120" height="60" as="geometry" />
+          <mxGeometry x="1190" y="507.39" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="vKAjqauAh3gj6h31wUOL-47" value="" style="sketch=0;html=1;aspect=fixed;strokeColor=none;shadow=0;align=center;verticalAlign=top;fillColor=#2D9C5E;shape=mxgraph.gcp2.check" vertex="1" parent="1">
-          <mxGeometry x="480" y="160" width="37.5" height="30" as="geometry" />
+          <mxGeometry x="740" y="167.39" width="37.5" height="30" as="geometry" />
         </mxCell>
         <mxCell id="vKAjqauAh3gj6h31wUOL-49" value="" style="sketch=0;html=1;aspect=fixed;strokeColor=none;shadow=0;align=center;verticalAlign=top;fillColor=#2D9C5E;shape=mxgraph.gcp2.check" vertex="1" parent="1">
-          <mxGeometry x="790" y="270" width="37.5" height="30" as="geometry" />
+          <mxGeometry x="1050" y="277.39" width="37.5" height="30" as="geometry" />
         </mxCell>
         <mxCell id="vKAjqauAh3gj6h31wUOL-50" value="" style="sketch=0;html=1;aspect=fixed;strokeColor=none;shadow=0;align=center;verticalAlign=top;fillColor=#2D9C5E;shape=mxgraph.gcp2.check" vertex="1" parent="1">
-          <mxGeometry x="790" y="380" width="37.5" height="30" as="geometry" />
+          <mxGeometry x="1050" y="387.39" width="37.5" height="30" as="geometry" />
         </mxCell>
         <mxCell id="vKAjqauAh3gj6h31wUOL-51" value="" style="sketch=0;html=1;aspect=fixed;strokeColor=none;shadow=0;align=center;verticalAlign=top;fillColor=#2D9C5E;shape=mxgraph.gcp2.check" vertex="1" parent="1">
-          <mxGeometry x="790" y="490" width="37.5" height="30" as="geometry" />
+          <mxGeometry x="1050" y="497.39" width="37.5" height="30" as="geometry" />
         </mxCell>
         <mxCell id="vKAjqauAh3gj6h31wUOL-53" value="&lt;h4&gt;&lt;pre style=&quot;box-sizing: border-box; font-family: var(--fontStack-monospace, ui-monospace, SFMono-Regular, SF Mono, Menlo, Consolas, Liberation Mono, monospace); font-size: 13.6px; margin-top: 0px; margin-bottom: 0px; overflow-wrap: normal; padding: var(--base-size-16); overflow: auto; line-height: 1.45; color: rgb(240, 246, 252); background-color: rgb(21, 27, 35); border-radius: 6px; word-break: normal; min-height: 52px; font-weight: 400; text-align: start;&quot;&gt;containers:&lt;br/&gt;  - name: grafana&lt;br/&gt;    image: bitnami/grafana:latest&lt;br/&gt;  - name: renderer&lt;br/&gt;    image: grafana/grafana-image-renderer:latest&lt;/pre&gt;&lt;/h4&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
-          <mxGeometry x="380" y="600" width="430" height="140" as="geometry" />
+          <mxGeometry x="640" y="607.39" width="430" height="140" as="geometry" />
         </mxCell>
         <mxCell id="vKAjqauAh3gj6h31wUOL-54" value="multi container setup" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="1">
           <mxGeometry x="10" y="630" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="vKAjqauAh3gj6h31wUOL-55" value="&lt;pre style=&quot;box-sizing: border-box; font-family: var(--fontStack-monospace, ui-monospace, SFMono-Regular, SF Mono, Menlo, Consolas, Liberation Mono, monospace); font-size: 13.6px; margin-top: 0px; margin-bottom: 0px; overflow-wrap: normal; padding: var(--base-size-16); overflow: auto; line-height: 1.45; color: rgb(240, 246, 252); background-color: rgb(21, 27, 35); border-radius: 6px; word-break: normal; min-height: 52px; text-align: start;&quot;&gt;&lt;span style=&quot;box-sizing: border-box; color: var(--color-prettylights-syntax-constant);&quot; class=&quot;pl-c1&quot;&gt;cd&lt;/span&gt; 6_Symbols&lt;br/&gt;helm install grafana bitnami/grafana --namespace grafana-monitoring -f values.yaml&lt;/pre&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
-          <mxGeometry x="389.78" y="770" width="720.22" height="120" as="geometry" />
+          <mxGeometry x="649.78" y="777.39" width="720.22" height="120" as="geometry" />
         </mxCell>
         <mxCell id="vKAjqauAh3gj6h31wUOL-56" value="Verify installation" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
           <mxGeometry x="180" y="920" width="120" height="180" as="geometry" />
         </mxCell>
         <mxCell id="vKAjqauAh3gj6h31wUOL-57" value="&lt;div&gt;# Check pod status&lt;/div&gt;&lt;div&gt;kubectl get pods -n grafana-monitoring&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;# If pods are failing, check events&lt;/div&gt;&lt;div&gt;kubectl describe pod -n grafana-monitoring&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;# Get admin password (may need different secret name based on installation)&lt;/div&gt;&lt;div&gt;kubectl get secret grafana-admin --namespace grafana-monitoring -o jsonpath=&quot;{.data.GF_SECURITY_ADMIN_PASSWORD}&quot; | base64 -d&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
-          <mxGeometry x="397.5" y="920" width="712.5" height="180" as="geometry" />
+          <mxGeometry x="657.5" y="927.39" width="712.5" height="180" as="geometry" />
         </mxCell>
         <mxCell id="vKAjqauAh3gj6h31wUOL-58" value="configuration" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
-          <mxGeometry x="1170" y="630" width="120" height="60" as="geometry" />
+          <mxGeometry x="1430" y="637.39" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="vKAjqauAh3gj6h31wUOL-59" value="shared passwords&lt;div&gt;for each other&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="1">
           <mxGeometry x="-40" y="680" width="120" height="60" as="geometry" />
@@ -184,16 +184,16 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="vKAjqauAh3gj6h31wUOL-61" value="curl client" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
-          <mxGeometry x="930" y="40" width="120" height="60" as="geometry" />
+          <mxGeometry x="1190" y="47.39" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="vKAjqauAh3gj6h31wUOL-65" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="vKAjqauAh3gj6h31wUOL-62" target="vKAjqauAh3gj6h31wUOL-64">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="vKAjqauAh3gj6h31wUOL-62" value="headless chrome" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
-          <mxGeometry x="1130" y="40" width="120" height="60" as="geometry" />
+          <mxGeometry x="1390" y="47.39" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="vKAjqauAh3gj6h31wUOL-64" value="grafana" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
-          <mxGeometry x="1330" y="40" width="120" height="60" as="geometry" />
+          <mxGeometry x="1590" y="47.39" width="120" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
