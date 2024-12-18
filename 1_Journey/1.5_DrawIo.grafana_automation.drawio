@@ -43,13 +43,13 @@
           <mxGeometry x="180" y="290" width="120" height="460" as="geometry" />
         </mxCell>
         <mxCell id="6" value="curl over the render-image container" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
-          <mxGeometry x="180" y="1542.6100000000001" width="120" height="180" as="geometry" />
+          <mxGeometry x="180" y="1722.6100000000001" width="120" height="180" as="geometry" />
         </mxCell>
         <mxCell id="7" value="curl command" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
-          <mxGeometry x="640" y="1550" width="120" height="60" as="geometry" />
+          <mxGeometry x="640" y="1730" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="8" value="curl command with dashboards" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
-          <mxGeometry x="640" y="1630" width="120" height="60" as="geometry" />
+          <mxGeometry x="640" y="1810" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="9" value="SYMBOLS" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
           <mxGeometry x="640" y="-32.61" width="120" height="60" as="geometry" />
@@ -88,7 +88,7 @@
           <mxGeometry x="740" y="57.39" width="37.5" height="30" as="geometry" />
         </mxCell>
         <mxCell id="24" value="" style="aspect=fixed;html=1;points=[];align=center;image;fontSize=12;image=img/lib/azure2/general/Globe_Error.svg;" parent="1" vertex="1">
-          <mxGeometry x="747.72" y="1540" width="22.06" height="26" as="geometry" />
+          <mxGeometry x="747.72" y="1720" width="22.06" height="26" as="geometry" />
         </mxCell>
         <mxCell id="vKAjqauAh3gj6h31wUOL-24" value="&lt;pre style=&quot;border-top-width: var(--borderRadiusMedium); border-right-width: var(--borderRadiusMedium); border-left-width: var(--borderRadiusMedium); border-bottom-width: var(--borderRadiusMedium); border-style: solid; border-top-color: var(--colorNeutralStroke1); border-right-color: var(--colorNeutralStroke1); border-left-color: var(--colorNeutralStroke1); border-bottom-color: var(--colorNeutralStroke1); padding: 10px; text-wrap-mode: wrap; overflow-wrap: break-word; color: rgb(36, 36, 36); font-size: 14px; text-align: left; background-color: rgb(255, 255, 255);&quot;&gt;&lt;code style=&quot;color: var(--colorNeutralForeground1); background-color: var(--colorNeutralBackground1); overflow-wrap: break-word;&quot;&gt;í ½í´„ Phase 2: Metrics Integration&lt;/code&gt;&lt;/pre&gt;" style="whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontColor=#333333;rounded=1;" vertex="1" parent="1">
           <mxGeometry x="-390" y="304" width="120" height="60" as="geometry" />
@@ -218,6 +218,12 @@
         </mxCell>
         <mxCell id="vKAjqauAh3gj6h31wUOL-74" value="" style="triangle;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
           <mxGeometry x="480" y="-290" width="60" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="vKAjqauAh3gj6h31wUOL-75" value="SECURITY SETUP" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="180" y="1480" width="120" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="vKAjqauAh3gj6h31wUOL-76" value="&lt;div&gt;# Generate API key from Grafana UI&lt;/div&gt;&lt;div&gt;# Navigate to: https://&amp;lt;codespace-name&amp;gt;-3000.preview.app.github.dev/org/serviceaccounts&lt;/div&gt;&lt;div&gt;# Generate and copy the API key&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;# Test API key access&lt;/div&gt;&lt;div&gt;curl -H &quot;Authorization: Bearer &amp;lt;your-api-key&amp;gt;&quot; &quot;http://localhost:3000/api/dashboards/home&quot;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="649.78" y="1480" width="760.22" height="151" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
