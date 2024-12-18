@@ -37,16 +37,16 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="5" value="grafana setup" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
-          <mxGeometry x="180" y="290" width="120" height="180" as="geometry" />
+          <mxGeometry x="180" y="290" width="120" height="460" as="geometry" />
         </mxCell>
         <mxCell id="6" value="curl over the render-image container" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
-          <mxGeometry x="180" y="520" width="120" height="180" as="geometry" />
+          <mxGeometry x="180" y="1230" width="120" height="180" as="geometry" />
         </mxCell>
         <mxCell id="7" value="curl command" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
-          <mxGeometry x="380" y="520" width="120" height="60" as="geometry" />
+          <mxGeometry x="380" y="1230" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="8" value="curl command with dashboards" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
-          <mxGeometry x="380" y="600" width="120" height="60" as="geometry" />
+          <mxGeometry x="380" y="1310" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="9" value="SYMBOLS" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
           <mxGeometry x="380" y="-40" width="120" height="60" as="geometry" />
@@ -85,7 +85,7 @@
           <mxGeometry x="480" y="50" width="37.5" height="30" as="geometry" />
         </mxCell>
         <mxCell id="24" value="" style="aspect=fixed;html=1;points=[];align=center;image;fontSize=12;image=img/lib/azure2/general/Globe_Error.svg;" parent="1" vertex="1">
-          <mxGeometry x="487.72" y="510" width="22.06" height="26" as="geometry" />
+          <mxGeometry x="487.72" y="1220" width="22.06" height="26" as="geometry" />
         </mxCell>
         <mxCell id="vKAjqauAh3gj6h31wUOL-24" value="&lt;pre style=&quot;border-top-width: var(--borderRadiusMedium); border-right-width: var(--borderRadiusMedium); border-left-width: var(--borderRadiusMedium); border-bottom-width: var(--borderRadiusMedium); border-style: solid; border-top-color: var(--colorNeutralStroke1); border-right-color: var(--colorNeutralStroke1); border-left-color: var(--colorNeutralStroke1); border-bottom-color: var(--colorNeutralStroke1); padding: 10px; text-wrap-mode: wrap; overflow-wrap: break-word; color: rgb(36, 36, 36); font-size: 14px; text-align: left; background-color: rgb(255, 255, 255);&quot;&gt;&lt;code style=&quot;color: var(--colorNeutralForeground1); background-color: var(--colorNeutralBackground1); overflow-wrap: break-word;&quot;&gt;í ½í´„ Phase 2: Metrics Integration&lt;/code&gt;&lt;/pre&gt;" style="whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontColor=#333333;rounded=1;" vertex="1" parent="1">
           <mxGeometry x="580" y="-270" width="120" height="60" as="geometry" />
@@ -134,6 +134,39 @@
         </mxCell>
         <mxCell id="vKAjqauAh3gj6h31wUOL-44" value="7" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
           <mxGeometry x="1450" y="-77.39" width="40" height="42.39" as="geometry" />
+        </mxCell>
+        <mxCell id="vKAjqauAh3gj6h31wUOL-45" value="&lt;h4&gt;&lt;font face=&quot;ui-monospace, SFMono-Regular, SF Mono, Menlo, Consolas, Liberation Mono, monospace&quot;&gt;&lt;span style=&quot;font-size: 13.6px;&quot;&gt;helm repo add bitnami https://charts.bitnami.com/bitnami helm repo update&lt;/span&gt;&lt;/font&gt;&lt;/h4&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="380" y="500" width="430" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="vKAjqauAh3gj6h31wUOL-46" value="helm chart install" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="930" y="500" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="vKAjqauAh3gj6h31wUOL-47" value="" style="sketch=0;html=1;aspect=fixed;strokeColor=none;shadow=0;align=center;verticalAlign=top;fillColor=#2D9C5E;shape=mxgraph.gcp2.check" vertex="1" parent="1">
+          <mxGeometry x="480" y="160" width="37.5" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="vKAjqauAh3gj6h31wUOL-49" value="" style="sketch=0;html=1;aspect=fixed;strokeColor=none;shadow=0;align=center;verticalAlign=top;fillColor=#2D9C5E;shape=mxgraph.gcp2.check" vertex="1" parent="1">
+          <mxGeometry x="790" y="270" width="37.5" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="vKAjqauAh3gj6h31wUOL-50" value="" style="sketch=0;html=1;aspect=fixed;strokeColor=none;shadow=0;align=center;verticalAlign=top;fillColor=#2D9C5E;shape=mxgraph.gcp2.check" vertex="1" parent="1">
+          <mxGeometry x="790" y="380" width="37.5" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="vKAjqauAh3gj6h31wUOL-51" value="" style="sketch=0;html=1;aspect=fixed;strokeColor=none;shadow=0;align=center;verticalAlign=top;fillColor=#2D9C5E;shape=mxgraph.gcp2.check" vertex="1" parent="1">
+          <mxGeometry x="790" y="490" width="37.5" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="vKAjqauAh3gj6h31wUOL-53" value="&lt;h4&gt;&lt;pre style=&quot;box-sizing: border-box; font-family: var(--fontStack-monospace, ui-monospace, SFMono-Regular, SF Mono, Menlo, Consolas, Liberation Mono, monospace); font-size: 13.6px; margin-top: 0px; margin-bottom: 0px; overflow-wrap: normal; padding: var(--base-size-16); overflow: auto; line-height: 1.45; color: rgb(240, 246, 252); background-color: rgb(21, 27, 35); border-radius: 6px; word-break: normal; min-height: 52px; font-weight: 400; text-align: start;&quot;&gt;containers:&lt;br/&gt;  - name: grafana&lt;br/&gt;    image: bitnami/grafana:latest&lt;br/&gt;  - name: renderer&lt;br/&gt;    image: grafana/grafana-image-renderer:latest&lt;/pre&gt;&lt;/h4&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="380" y="600" width="430" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="vKAjqauAh3gj6h31wUOL-54" value="multi container setup" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="1">
+          <mxGeometry x="10" y="630" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="vKAjqauAh3gj6h31wUOL-55" value="&lt;pre style=&quot;box-sizing: border-box; font-family: var(--fontStack-monospace, ui-monospace, SFMono-Regular, SF Mono, Menlo, Consolas, Liberation Mono, monospace); font-size: 13.6px; margin-top: 0px; margin-bottom: 0px; overflow-wrap: normal; padding: var(--base-size-16); overflow: auto; line-height: 1.45; color: rgb(240, 246, 252); background-color: rgb(21, 27, 35); border-radius: 6px; word-break: normal; min-height: 52px; text-align: start;&quot;&gt;&lt;span style=&quot;box-sizing: border-box; color: var(--color-prettylights-syntax-constant);&quot; class=&quot;pl-c1&quot;&gt;cd&lt;/span&gt; 6_Symbols&lt;br/&gt;helm install grafana bitnami/grafana --namespace grafana-monitoring -f values.yaml&lt;/pre&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="389.78" y="770" width="720.22" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="vKAjqauAh3gj6h31wUOL-56" value="Verify installation" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="180" y="920" width="120" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="vKAjqauAh3gj6h31wUOL-57" value="&lt;div&gt;# Check pod status&lt;/div&gt;&lt;div&gt;kubectl get pods -n grafana-monitoring&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;# If pods are failing, check events&lt;/div&gt;&lt;div&gt;kubectl describe pod -n grafana-monitoring&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;# Get admin password (may need different secret name based on installation)&lt;/div&gt;&lt;div&gt;kubectl get secret grafana-admin --namespace grafana-monitoring -o jsonpath=&quot;{.data.GF_SECURITY_ADMIN_PASSWORD}&quot; | base64 -d&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="397.5" y="920" width="712.5" height="180" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
