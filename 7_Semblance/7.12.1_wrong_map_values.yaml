@@ -1,0 +1,47 @@
+grafana:
+  adminPassword: "your-password"
+  env:
+    GF_RENDERING_ENABLED: "true"
+    GF_RENDERING_SERVER_URL: "http://grafana-renderer:3000/render"
+    GF_RENDERING_CALLBACK_URL: "http://grafana:3000/"
+    GF_LOG_FILTERS: "rendering:debug"
+  persistence:
+    enabled: true
+    size: 100Mi
+  service:
+    type: NodePort
+    port: 3000
+    nodePort: 30000
+  plugins:
+    - grafana-image-renderer
+  initContainers:
+    - name: init-chmod-data
+      image: busybox
+      command: ['sh', '-c', 'chmod -R 777 /var/lib/grafana']
+      volumeMounts:
+        - name: grafana-storage
+          mountPath: /var/lib/grafana
+  extraVolumes:
+    - name: grafana-storage
+      emptyDir: {}
+
+grafanaRenderer:
+  enabled: true
+  image:
+    repository: grafana/grafana-image-renderer
+    tag: latest
+  service:
+    type: NodePort
+    port: 3000
+    nodePort: 30001
+  replicaCount: 1
+  initContainers:
+    - name: init-chmod-data
+      image: busybox
+      command: ['sh', '-c', 'chmod -R 777 /var/lib/grafana']
+      volumeMounts:
+        - name: grafana-renderer-storage
+          mountPath: /var/lib/grafana
+  extraVolumes:
+    - name: grafana-renderer-storage
+      emptyDir: {}
