@@ -4,7 +4,7 @@ image:
   tag: latest
 service:
   type: NodePort
-  port: 3000
+  port: 8081
   nodePort: 30001
 replicaCount: 1
 initContainers:
@@ -16,4 +16,4 @@ initContainers:
         mountPath: /var/lib/grafana
 extraVolumes:
   - name: grafana-renderer-storage
-    emptyDir: {}
+    emptyDir: {}a
