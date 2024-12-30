@@ -1,19 +1,25 @@
-enabled: true
-image:
-  repository: grafana/grafana-image-renderer
-  tag: latest
-service:
-  type: NodePort
-  port: 8081
-  nodePort: 30001
-replicaCount: 1
-initContainers:
-  - name: init-chmod-data
-    image: busybox
-    command: ['sh', '-c', 'chmod -R 777 /var/lib/grafana']
-    volumeMounts:
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: grafana-imagerenderer
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: grafana-imagerenderer
+  template:
+    metadata:
+      labels:
+        app: grafana-imagerenderer
+    spec:
+      containers:
+      - name: grafana-imagerenderer
+        image: grafana/grafana-image-renderer:latest
+        ports:
+        - containerPort: 8081
+        volumeMounts:
+        - name: grafana-renderer-storage
+          mountPath: /var/lib/grafana
+      volumes:
       - name: grafana-renderer-storage
-        mountPath: /var/lib/grafana
-extraVolumes:
-  - name: grafana-renderer-storage
-    emptyDir: {}a
+        emptyDir: {}
