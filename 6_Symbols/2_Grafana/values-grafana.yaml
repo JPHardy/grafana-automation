@@ -6,8 +6,6 @@ admin:
   ##
   password: "your-password"
 
-##
-plugins: "grafana-imagerenderer-app"
 ## Grafana Image Renderer configuration for Grafana
 ##
 imageRenderer:
@@ -45,7 +43,6 @@ grafana:
   extraVolumes:
     - name: grafana-storage
       emptyDir: {}
-
 
 ## Service parameters
 ##
