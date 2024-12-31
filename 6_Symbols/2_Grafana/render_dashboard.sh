@@ -1,10 +1,10 @@
 #!/bin/bash
 
 # Define parameters
-dashboardId="be8l3oicijawwd"
-tokenId="glsa_RGkj5jfMMcCXwF8HIdn3V9XJIUt86w3R_bc18f0da"
+dashboardId="ee8l7vngt74lcc"
+tokenId="glsa_A5cBg7AnfN31RcsUnYRY4ZOVYfTsKoUa_7fd912b0"
 # kubectl get endpoints -n grafana-monitoring
-serverUrl="http://10.244.0.3:3000"
+serverUrl="http://10.244.0.4:3000"
 panelId="1"
 from="2024-01-01T00:00:00.000Z"
 to="2024-01-03T00:00:00.000Z"
