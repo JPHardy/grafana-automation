@@ -18,19 +18,19 @@ spec:
         ports:
         - containerPort: 8081
         volumeMounts:
-        - name: grafana-renderer-storage
+        - name: grafana-imagerenderer-storage
           mountPath: /var/lib/grafana
       volumes:
-      - name: grafana-renderer-storage
+      - name: grafana-imagerenderer-storage
         emptyDir: {}
 apiVersion: v1
 kind: Service
 metadata:
-  name: grafana-renderer
+  name: grafana-imagerenderer
 spec:
   selector:
     app: grafana-imagerenderer
   ports:
     - protocol: TCP
       port: 3000
-      targetPort: 3000
+      targetPort: 8081
