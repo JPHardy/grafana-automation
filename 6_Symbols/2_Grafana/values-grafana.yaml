@@ -40,6 +40,9 @@ grafana:
       volumeMounts:
         - name: grafana-storage
           mountPath: /var/lib/grafana
+    - name: install-ping
+      image: busybox
+      command: ['sh', '-c', 'apk add --no-cache iputils && sleep 1']
   extraVolumes:
     - name: grafana-storage
       emptyDir: {}
