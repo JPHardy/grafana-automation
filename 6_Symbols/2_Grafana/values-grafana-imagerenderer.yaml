@@ -29,7 +29,7 @@ metadata:
   name: grafana-renderer
 spec:
   selector:
-    app: grafana-renderer
+    app: grafana-imagerenderer
   ports:
     - protocol: TCP
       port: 3000
