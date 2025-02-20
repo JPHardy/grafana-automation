@@ -42,5 +42,6 @@ function Open-URL {
 # Open each dashboard URL without verbose debugging
 foreach ($dashboard in $dashboards.GetEnumerator()) {
     $url = $dashboard.Value -replace '\$\{root_url\}', $rootUrl -replace '\$\{time_range.from\}', $timeRangeFrom -replace '\$\{time_range.to\}', $timeRangeTo
+    $url += "?from=$timeRangeFrom&to=$timeRangeTo"
     Open-URL -url $url
 }
