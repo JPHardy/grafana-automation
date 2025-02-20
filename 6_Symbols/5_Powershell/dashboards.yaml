@@ -1,0 +1,15 @@
+root_url: "XXX"
+time_range:
+  from: 1739782800000
+  to: 1739869200000
+
+dashboards:
+  Cluster_Health: "${root_url}/d/967f69838b2f3df54549cf3c6514e9deeb116e37/architects-health-dashboard-v2&from=${time_range.from}&to=${time_range.to}"
+  End2End_Declaration_Processing: "${root_url}/d/967f69838b2f3df54549cf3c6514e9deeb116e37/architects-health-dashboard-v2?viewPanel=27&orgId=1&from=${time_range.from}&to=${time_range.to}"
+  EPC_Cache_Zone_Summary: "${root_url}/d/967f69838b2f3df54549cf3c6514e9deeb116e37/architects-health-dashboard-v2?orgId=1&viewPanel=33&from=${time_range.from}&to=${time_range.to}"
+  Queue_Depth: "${root_url}/d/967f69838b2f3df54549cf3c6514e9deeb116e37/architects-health-dashboard-v2?orgId=1&viewPanel=48&from=${time_range.from}&to=${time_range.to}"
+  Instruction_Status: "${root_url}/d/967f69838b2f3df54549cf3c6514e9deeb116e37/architects-health-dashboard-v2?orgId=1&viewPanel=80&from=${time_range.from}&to=${time_range.to}"
+  App_Readiness_and_Failures: "${root_url}/d/967f69838b2f3df54549cf3c6514e9deeb116e37/architects-health-dashboard-v2?orgId=1&viewPanel=59&from=${time_range.from}&to=${time_range.to}"
+  End_User_Endpoint_GraphQL: "${root_url}/d/967f69838b2f3df54549cf3c6514e9deeb116e37/architects-health-dashboard-v2?orgId=1&viewPanel=2&from=${time_range.from}&to=${time_range.to}"
+  EDB_Postgres: "${root_url}/d/5f9ddada5317bf6c083e39662afa86c0295d9f34/edb-postgres-for-kubernetes?orgId=1&from=${time_range.from}&to=${time_range.to}"
+  Kibana_Logging_HeatMap: "YYYY/app/kibana#/dashboard/05cdf00-2634-11ee-94f7-a3e1b221c34f?_g=(refreshInterval:(pause:!t,value:0),time:(from:'2025-02-17T09:00:00.000Z',mode:absolute,to:'2025-02-18T09:00:00.000Z'))"

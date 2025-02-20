@@ -1,0 +1,7 @@
+root_url: "https://play.grafana.org/"
+time_range:
+  from: 1739782800000
+  to: 1739869200000
+
+dashboards:
+  Alerting: "${root_url}/d/testdata_alerts/alerting-with-testdata?orgId=1&from=${time_range.from}&to=${time_range.to}&timezone=browser&var-namefilter=TestData&viewPanel=panel-4"
