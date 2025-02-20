@@ -20,32 +20,27 @@ $timeRangeTo = [math]::Round(($today9am - (Get-Date "1970-01-01T00:00:00Z")).Tot
 $rootUrl = $yamlContent.root_url
 $dashboards = $yamlContent.dashboards
 
-# Define the Open-URL function with verbose debugging
+# Define the Open-URL function without verbose debugging
 function Open-URL {
     param (
         [string]$url
     )
 
-    Write-Host "Host URL: $rootUrl" -Verbose
-    Write-Host "Provided URL: $url" -Verbose
-
     if ($url -match '^(http|https)://') {
         if ($env:MY_ENVIRONMENT -eq "local") {
-            Write-Host "Environment: Local" -Verbose
             Start-Process "chrome.exe" $url
         } elseif ($env:MY_ENVIRONMENT -eq "codespaces") {
-            Write-Host "Environment: Codespaces" -Verbose
-            Write-Host "Opening URL in Codespaces: $url" -Verbose
+            Write-Host "Opening URL in Codespaces: $url"
         } else {
-            Write-Host "Unknown environment. Please set MY_ENVIRONMENT to either 'local' or 'codespaces'." -Verbose
+            Write-Host "Unknown environment. Please set MY_ENVIRONMENT to either 'local' or 'codespaces'."
         }
     } else {
-        Write-Host "Invalid URL. Please enter a valid URL starting with http or https." -Verbose
+        Write-Host "Invalid URL. Please enter a valid URL starting with http or https."
     }
 }
-# Open each dashboard URL with verbose debugging
+
+# Open each dashboard URL without verbose debugging
 foreach ($dashboard in $dashboards.GetEnumerator()) {
-    $url = "$dashboard.Value -replace '\$\{root_url\}', $rootUrl -replace '\$\{time_range.from\}', $timeRangeFrom -replace '\$\{time_range.to\}', $timeRangeTo"
-    Write-Host "Processed Dashboard URL: $url" -Verbose
+    $url = $dashboard.Value -replace '\$\{root_url\}', $rootUrl -replace '\$\{time_range.from\}', $timeRangeFrom -replace '\$\{time_range.to\}', $timeRangeTo
     Open-URL -url $url
 }
